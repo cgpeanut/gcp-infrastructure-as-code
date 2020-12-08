@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -x 
+
+gcloud compute instances create puppet --machine-type n1-standard-4 --boot-disk-type pd-standard --boot-disk-size 200GB  --image-project windows-sql-cloud --image-family sql-ent-2014-win-2012-r2 --zone us-east4-c --metadata-from-file windows-startup-script-ps1="startup.ps1"
