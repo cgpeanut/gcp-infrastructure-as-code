@@ -1,0 +1,17 @@
+export TF_VAR_project_id=forseti-dev17
+export TF_VAR_folder_id=84
+export TF_VAR_org_id=3333322
+export TF_VAR_billing_account=0E-265F-67
+export TF_VAR_domain=dev.its-gcp.deloitte.com
+export TF_VAR_region=us-east4
+export TF_VAR_network=default
+export TF_VAR_subnetwork=default
+# -- these are not required
+export TF_VAR_gsuite_admin_email=admin@domain.com 
+export TF_VAR_sendgrid_api_key=""
+export TF_VAR_forseti_email_sender=""
+export TF_VAR_forseti_email_recipient=""
+export TF_VAR_network_project=""
+# rename vars
+export PROJECT_ID="$TF_VAR_project_id"
+export ORG_ID="$TF_VAR_org_id"
